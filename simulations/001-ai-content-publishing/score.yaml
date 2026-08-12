@@ -1,0 +1,28 @@
+simulation: 001
+title: ai-content-publishing
+overall_score: 7.6
+
+scores:
+  business_discovery: 8.5
+  evidence_data_thinking: 8.5
+  root_cause_analysis: 7.5
+  stakeholder_discovery: 8.0
+  problem_framing: 7.0
+  solution_design: 7.5
+  scope_management: 8.0
+  expectation_management: 7.5
+  ownership_contracting: 7.0
+  acceptance_criteria: 6.5
+  adoption_thinking: 7.0
+  executive_communication: 7.0
+  adaptability: 9.0
+
+top_strengths:
+  - business_discovery
+  - evidence_data_thinking
+  - adaptability
+
+next_focus:
+  - delay_solution
+  - ownership_contracting
+  - metric_definition
