@@ -12,7 +12,7 @@
 - [x] Current profile
 - [x] Score history
 - [x] ChatGPT Project instructions
-- [ ] 创建 GitHub repository
+- [x] 创建 GitHub repository
 - [ ] 创建 ChatGPT Project
 - [ ] 将当前完整聊天迁入 Project
 - [ ] 在 Project 中启动 Case 002 Work
