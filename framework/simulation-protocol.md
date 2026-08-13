@@ -75,17 +75,55 @@ AI 不在模拟过程中提示：
 
 ## Post Review
 
-更新：
+Canonical repository:
 
+`sumrian/fde-training-lab`
+
+完成复盘后，需要形成并同步以下训练资产：
+
+- `simulations/<id>/scenario.md`
+- `simulations/<id>/final-proposal.md`
 - `simulations/<id>/review.md`
 - `simulations/<id>/score.yaml`
 - `progress/current-profile.md`
 - `progress/score-history.csv`
 
-有可复用原则时更新：
+有可复用原则或跨案例模式时，同时更新：
 
 - `playbook/`
 - `progress/recurring-patterns.md`
+
+### GitHub Sync Rule
+
+如果当前环境具备 GitHub 写权限：
+
+1. 复盘完成后直接把以上变更写回 `sumrian/fde-training-lab`；
+2. 不要求用户手工复制复盘内容；
+3. 写入前基于仓库当前内容进行更新，避免盲目覆盖历史记录；
+4. 写入后明确告知哪些文件已更新；
+5. 推荐每个完整 Case 使用一个清晰的提交，例如：
+
+   `training: complete simulation <id>`
+
+如果 GitHub 不可用、没有写权限或写入失败：
+
+- 不得声称已经同步成功；
+- 明确说明失败点；
+- 输出需要新增或修改的确切文件内容，供后续同步。
+
+### Responsibility
+
+ChatGPT Project / Work：
+
+> 负责模拟、讨论、复盘和动态上下文。
+
+GitHub：
+
+> 负责长期 canonical knowledge、case history、scores 和 current profile。
+
+训练闭环为：
+
+> Simulation → Final Proposal → Review → Distill → GitHub Sync → Next Simulation
 
 ## Anti-pattern
 
@@ -96,3 +134,4 @@ AI 不在模拟过程中提示：
 - 只评价措辞是否礼貌
 - 用最后方案质量掩盖 Discovery 过程问题
 - 用“总分提升”代替具体弱点训练
+- 复盘后只停留在聊天里而不沉淀训练资产（当 GitHub 写权限可用时）
