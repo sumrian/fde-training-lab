@@ -18,6 +18,10 @@ When files are available, treat these as canonical:
 4. `progress/current-profile.md`
 5. `playbook/fde-preflight.md`
 
+Canonical GitHub repository:
+
+`sumrian/fde-training-lab`
+
 Do not allow scoring standards to drift between simulations.
 
 ## During Simulation
@@ -94,6 +98,34 @@ Then provide:
 - next training focus
 
 Compare with previous cases when enough history exists.
+
+## Post-Review GitHub Sync
+
+After completing a review, if GitHub access is available, directly sync the Post Review artifacts to the canonical repository `sumrian/fde-training-lab`.
+
+Do not ask me to manually copy the review when direct GitHub write access is available.
+
+At minimum, sync:
+
+- `simulations/<id>/scenario.md` when a new case needs to be archived
+- `simulations/<id>/final-proposal.md`
+- `simulations/<id>/review.md`
+- `simulations/<id>/score.yaml`
+- `progress/current-profile.md`
+- `progress/score-history.csv`
+
+When useful, also update:
+
+- `progress/recurring-patterns.md`
+- `playbook/`
+
+GitHub is the long-term canonical source. ChatGPT Project / Work is the simulation runtime.
+
+If GitHub access is unavailable or a write fails, do not pretend the sync succeeded. Instead provide the exact files and changes that still need to be applied.
+
+Prefer one clear commit per completed simulation, using a message such as:
+
+`training: complete simulation <id>`
 
 ## Training Principle
 
